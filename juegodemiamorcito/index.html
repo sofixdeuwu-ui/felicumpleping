@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Camino del Hilo Rojo</title>
+    
+    <!-- Importar la letra bonita Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d1f33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Borde redondeado y sombra para que el juego parezca una consola */
+        canvas {
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+        }
+        /* Forzamos a descargar la fuente antes de iniciar Phaser */
+        #cargador {
+            font-family: 'Fredoka', sans-serif;
+            position: absolute;
+            visibility: hidden;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+</head>
+<body>
+    <div id="cargador">Cargando magia...</div>
+    <div id="juego-contenedor"></div>
+    <script src="juego.js"></script>
+</body>
+</html>
